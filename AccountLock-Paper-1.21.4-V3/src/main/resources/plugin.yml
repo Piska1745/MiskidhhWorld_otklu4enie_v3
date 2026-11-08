@@ -1,0 +1,17 @@
+name: AccountLock
+version: 3.0.0
+main: net.miskidhhworld.accountlock.AccountLockPlugin
+api-version: '1.21'
+description: Encrypted UUID and strict IP account lock system for MiskidhhWorld.
+commands:
+  accountlock:
+    description: Disable an online account or inspect lock status.
+    usage: /accountlock disable <online-player> <reason...>
+    permission: accountlock.disable
+permissions:
+  accountlock.disable:
+    description: Allows a player to permanently disable an account.
+    default: false
+  accountlock.audit:
+    description: Allows a player to inspect whether an online player is locked.
+    default: false
